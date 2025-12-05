@@ -1,2 +1,2 @@
 # mobile-application
-bir planlama uygulamasıdır
+bir planlama uygulamasıd
