@@ -1,32 +1,50 @@
 # Odaklanma Takibi ve Raporlama Uygulaması
 
-React Native (Expo) tabanlı bu uygulama, odaklanma seanslarını başlatma, AppState ile dikkat dağınıklığını yakalama ve sonuçları raporlama için hazırlandı.
+Bu proje, Sakarya Üniversitesi Bilgisayar Mühendisliği Bölümü  
+**BSM 447 – Mobil Uygulama Geliştirme** dersi kapsamında geliştirilmiştir.
 
-## Özellikler
-- 25 dk varsayılan (metin kutusu ile değiştirilebilir) geri sayım sayacı
-- Başlat / Duraklat / Sıfırla kontrolleri
-- Kategori seçimi (Ders, Kodlama, Proje, Kitap)
-- AppState ile arka plana geçince otomatik duraklatma ve dikkat dağınıklığı sayacı
-- Seans özeti kaydı (süre, kategori, dikkat dağınıklığı) ve son seansı gösterme
-- Raporlar sekmesinde genel istatistikler, son 7 gün çubuk grafik, kategori bazlı pasta grafik
-- Veriler AsyncStorage ile cihazda saklanır
+## 🎯 Projenin Amacı
+Günümüzde dijital dikkat dağınıklığı, bireylerin verimli çalışmasını zorlaştıran önemli bir problemdir.  
+Bu uygulama, kullanıcıların kendi başlattıkları odaklanma seanslarını takip etmelerini, dikkat dağınıklıklarını fark etmelerini ve bu verileri analiz etmelerini amaçlamaktadır.
 
-## Kurulum
+Uygulama, Pomodoro tekniğine benzer bir zamanlayıcı yapısı sunmakta ve seans süresince kullanıcının uygulamadan ayrılıp ayrılmadığını takip etmektedir.
+
+---
+
+## 🛠 Kullanılan Teknolojiler
+- React Native
+- Expo
+- React Navigation
+- React Native AppState API
+- Expo SQLite
+- react-native-chart-kit
+
+---
+
+## 📱 Uygulama Özellikleri
+- Kullanıcı girişi ve kayıt sistemi
+- Ayarlanabilir odaklanma süresi (Pomodoro)
+- Kategori bazlı odaklanma seansları
+- Dikkat dağınıklığı algılama (arka plana geçiş / sekme değişimi)
+- Seans özeti gösterimi
+- Kullanıcıya özel raporlama ve grafikler
+- Çevrimdışı çalışma desteği
+
+---
+
+## 📊 Raporlama
+- Günlük toplam odaklanma süresi
+- Tüm zamanların toplam odaklanma süresi
+- Toplam dikkat dağınıklığı sayısı
+- Son 7 gün için çubuk grafik
+- Kategori bazlı pasta grafik
+
+---
+
+## 🚀 Kurulum ve Çalıştırma
+
 ```bash
+git clone https://github.com/rvydadlra/mobile-application.git
+cd mobile-application
 npm install
-```
-
-## Çalıştırma
-```bash
-npm start
-```
-Komut çıktısındaki yönlendirmelerle Expo Go veya emulator üzerinde açabilirsiniz.
-
-## Görevler
-- `npm run lint`: ESLint kontrolü (Prettier uyarıları kapalı).
-- VS Code görev listesinde `expo start` görevi hazır.
-
-## Notlar
-- Web çıkışı için `expo start --web` kullanabilirsiniz; Router gerektirmemesi için web output statik değil.
-- Grafikler için `react-native-chart-kit` ve `react-native-svg` kullanılıyor.
-- AsyncStorage verilerini temizlemek için cihaz ayarlarından uygulama verisini silmeniz yeterli.
+npx expo start
