@@ -1,0 +1,26 @@
+{
+  "expo": {
+    "name": "Odaklanma Takibi",
+    "slug": "odaklanma-takibi",
+    "scheme": "odaklanma",
+    "version": "0.1.0",
+    "sdkVersion": "54.0.0",
+    "orientation": "portrait",
+  
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      
+    },
+    "web": {
+        "bundler": "metro"
+    }
+  }
+}
